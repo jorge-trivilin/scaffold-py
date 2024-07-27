@@ -14,7 +14,7 @@ steps:
     args:
       - '-c'
       - |
-        export PYTHONPATH=$PYTHONPATH:/workspace/pip
+        export PYTHONPATH=/workspace/pip
         pylint hello.py
     waitFor:
       - 'Install dependencies'
@@ -25,7 +25,7 @@ steps:
     args:
       - '-c'
       - |
-        export PYTHONPATH=$PYTHONPATH:/workspace/pip
+        export PYTHONPATH=/workspace/pip
         pytest
     waitFor:
       - 'Install dependencies'
