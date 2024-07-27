@@ -1,4 +1,6 @@
-### A simple scaffold-py project
+# Scaffold-Py
+
+This repository provides a scaffold for Python projects with a focus on continuous integration and code quality. The scaffold includes setup for linting, testing, and formatting using tools like `pylint`, `pytest`, and `autopep8`.
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
 
@@ -7,10 +9,6 @@
 *Connect with Jorge here:*
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Jorge_Trivilin-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/jorgetrivilin/)
-
-# Scaffold-Py
-
-This repository provides a scaffold for Python projects with a focus on continuous integration and code quality. The scaffold includes setup for linting, testing, and formatting using tools like `pylint`, `pytest`, and `autopep8`.
 
 ## Project Structure
 
