@@ -29,3 +29,5 @@ steps:
         pytest
     waitFor:
       - 'Install dependencies'
+
+logsBucket: 'gs://scaffold-py'
