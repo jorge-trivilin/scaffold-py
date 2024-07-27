@@ -305,8 +305,7 @@ steps:
 Check the logs of the GitHub Actions, GCP Cloud Build, and Azure Pipelines run for detailed information about failures. The logs can be accessed from the respective cloud platform's interface.
 
 ## Demo
-- Video 01: https://youtu.be/AIJ2z2FWF0A
-- Video 02: https://youtu.be/HIB8HM3gj68
+- Video 01: https://www.youtube.com/watch?v=ESHXN-mujrY
 
 ---
 
