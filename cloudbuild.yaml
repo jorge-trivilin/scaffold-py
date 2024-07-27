@@ -6,8 +6,8 @@ steps:
       - '-c'
       - |
         pip install --upgrade pip
-        pip install -r requirements.txt -t /workspace/pip
-        pip install pylint  # Adicionando instalação do pylint
+        pip install -r requirements.txt
+        pip install pylint
 
   - name: 'python:3.8'
     id: 'Lint'
@@ -15,7 +15,6 @@ steps:
     args:
       - '-c'
       - |
-        export PYTHONPATH=/workspace/pip
         pylint hello.py
     waitFor:
       - 'Install dependencies'
@@ -26,7 +25,6 @@ steps:
     args:
       - '-c'
       - |
-        export PYTHONPATH=/workspace/pip
         pytest
     waitFor:
       - 'Install dependencies'
@@ -38,7 +36,7 @@ artifacts:
       - 'workspace/pip/**/*'
 
 options:
-  machineType: 'E2_HIGHCPU_8'  # Tipo de máquina válido
+  machineType: 'E2_HIGHCPU_8'
   diskSizeGb: 100
   substitutionOption: ALLOW_LOOSE
   dynamicSubstitutions: true
