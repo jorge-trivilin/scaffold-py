@@ -7,7 +7,7 @@ pool:
 steps:
 - script: |
     python3.12 -m venv scaffold
-    source scaffold/bin/activate
+    source myenv/bin/activate
     pip install --upgrade pip
     pip install -r requirements.txt
   displayName: 'Setup Python environment and install dependencies'
