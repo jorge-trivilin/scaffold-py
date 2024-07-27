@@ -8,14 +8,13 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Jorge_Trivilin-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/jorgetrivilin/)
 
-```markdown
 # Scaffold-Py
 
 This repository provides a scaffold for Python projects with a focus on continuous integration and code quality. The scaffold includes setup for linting, testing, and formatting using tools like `pylint`, `pytest`, and `autopep8`.
 
 ## Project Structure
 
-```
+
 scaffold-py/
 ├── .github/
 │   └── workflows/
@@ -24,7 +23,6 @@ scaffold-py/
 ├── Makefile
 ├── requirements.txt
 └── test_hello.py
-```
 
 - **`.github/workflows/python-app.yml`**: Configuration for GitHub Actions to automate testing, linting, and formatting.
 - **`hello.py`**: Example Python script.
