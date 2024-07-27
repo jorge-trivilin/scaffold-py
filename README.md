@@ -308,7 +308,3 @@ Check the logs of the GitHub Actions, GCP Cloud Build, and Azure Pipelines run f
 - Video 01: https://www.youtube.com/watch?v=ESHXN-mujrY
 
 ---
-
-This updated
-
- documentation should now cover all the steps we took, including the configurations for GCP Cloud Build and Azure Pipelines, the Docker setup, and the necessary troubleshooting steps.
