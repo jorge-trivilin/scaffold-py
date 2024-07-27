@@ -1,0 +1,82 @@
+﻿2024-07-27T01:06:55.0009418Z ##[group]Run actions/checkout@v2
+2024-07-27T01:06:55.0010143Z with:
+2024-07-27T01:06:55.0010559Z   repository: jorge-trivilin/scaffold-py
+2024-07-27T01:06:55.0011279Z   token: ***
+2024-07-27T01:06:55.0011773Z   ssh-strict: true
+2024-07-27T01:06:55.0012199Z   persist-credentials: true
+2024-07-27T01:06:55.0012641Z   clean: true
+2024-07-27T01:06:55.0013097Z   fetch-depth: 1
+2024-07-27T01:06:55.0013493Z   lfs: false
+2024-07-27T01:06:55.0013846Z   submodules: false
+2024-07-27T01:06:55.0014342Z   set-safe-directory: true
+2024-07-27T01:06:55.0014786Z ##[endgroup]
+2024-07-27T01:06:55.1846562Z Syncing repository: jorge-trivilin/scaffold-py
+2024-07-27T01:06:55.1849633Z ##[group]Getting Git version info
+2024-07-27T01:06:55.1851075Z Working directory is '/home/runner/work/scaffold-py/scaffold-py'
+2024-07-27T01:06:55.1853093Z [command]/usr/bin/git version
+2024-07-27T01:06:55.1853956Z git version 2.45.2
+2024-07-27T01:06:55.1867826Z ##[endgroup]
+2024-07-27T01:06:55.1889292Z Temporarily overriding HOME='/home/runner/work/_temp/b784d985-f976-472d-b3df-94ae528da9f9' before making global git config changes
+2024-07-27T01:06:55.1892020Z Adding repository directory to the temporary git global config as a safe directory
+2024-07-27T01:06:55.1894296Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/scaffold-py/scaffold-py
+2024-07-27T01:06:55.1930815Z Deleting the contents of '/home/runner/work/scaffold-py/scaffold-py'
+2024-07-27T01:06:55.1934539Z ##[group]Initializing the repository
+2024-07-27T01:06:55.1940071Z [command]/usr/bin/git init /home/runner/work/scaffold-py/scaffold-py
+2024-07-27T01:06:55.2009400Z hint: Using 'master' as the name for the initial branch. This default branch name
+2024-07-27T01:06:55.2011344Z hint: is subject to change. To configure the initial branch name to use in all
+2024-07-27T01:06:55.2013238Z hint: of your new repositories, which will suppress this warning, call:
+2024-07-27T01:06:55.2014836Z hint:
+2024-07-27T01:06:55.2015786Z hint: 	git config --global init.defaultBranch <name>
+2024-07-27T01:06:55.2016934Z hint:
+2024-07-27T01:06:55.2017925Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2024-07-27T01:06:55.2019721Z hint: 'development'. The just-created branch can be renamed via this command:
+2024-07-27T01:06:55.2021093Z hint:
+2024-07-27T01:06:55.2021786Z hint: 	git branch -m <name>
+2024-07-27T01:06:55.2023387Z Initialized empty Git repository in /home/runner/work/scaffold-py/scaffold-py/.git/
+2024-07-27T01:06:55.2025429Z [command]/usr/bin/git remote add origin https://github.com/jorge-trivilin/scaffold-py
+2024-07-27T01:06:55.2052727Z ##[endgroup]
+2024-07-27T01:06:55.2054108Z ##[group]Disabling automatic garbage collection
+2024-07-27T01:06:55.2057365Z [command]/usr/bin/git config --local gc.auto 0
+2024-07-27T01:06:55.2092999Z ##[endgroup]
+2024-07-27T01:06:55.2094470Z ##[group]Setting up auth
+2024-07-27T01:06:55.2100572Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2024-07-27T01:06:55.2132040Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2024-07-27T01:06:55.2431880Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2024-07-27T01:06:55.2459455Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2024-07-27T01:06:55.2694647Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2024-07-27T01:06:55.2730612Z ##[endgroup]
+2024-07-27T01:06:55.2732023Z ##[group]Fetching the repository
+2024-07-27T01:06:55.2739864Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +7fac415e4535231ad5806c65c38acc0c73eb5a31:refs/remotes/origin/main
+2024-07-27T01:06:55.6471974Z remote: Enumerating objects: 10, done.        
+2024-07-27T01:06:55.6473945Z remote: Counting objects:  10% (1/10)        
+2024-07-27T01:06:55.6475170Z remote: Counting objects:  20% (2/10)        
+2024-07-27T01:06:55.6476353Z remote: Counting objects:  30% (3/10)        
+2024-07-27T01:06:55.6477561Z remote: Counting objects:  40% (4/10)        
+2024-07-27T01:06:55.6478434Z remote: Counting objects:  50% (5/10)        
+2024-07-27T01:06:55.6479086Z remote: Counting objects:  60% (6/10)        
+2024-07-27T01:06:55.6480022Z remote: Counting objects:  70% (7/10)        
+2024-07-27T01:06:55.6481105Z remote: Counting objects:  80% (8/10)        
+2024-07-27T01:06:55.6482118Z remote: Counting objects:  90% (9/10)        
+2024-07-27T01:06:55.6483284Z remote: Counting objects: 100% (10/10)        
+2024-07-27T01:06:55.6484391Z remote: Counting objects: 100% (10/10), done.        
+2024-07-27T01:06:55.6485142Z remote: Compressing objects:  14% (1/7)        
+2024-07-27T01:06:55.6486558Z remote: Compressing objects:  28% (2/7)        
+2024-07-27T01:06:55.6487741Z remote: Compressing objects:  42% (3/7)        
+2024-07-27T01:06:55.6488898Z remote: Compressing objects:  57% (4/7)        
+2024-07-27T01:06:55.6490375Z remote: Compressing objects:  71% (5/7)        
+2024-07-27T01:06:55.6491683Z remote: Compressing objects:  85% (6/7)        
+2024-07-27T01:06:55.6492820Z remote: Compressing objects: 100% (7/7)        
+2024-07-27T01:06:55.6494271Z remote: Compressing objects: 100% (7/7), done.        
+2024-07-27T01:06:55.6495869Z remote: Total 10 (delta 0), reused 5 (delta 0), pack-reused 0        
+2024-07-27T01:06:55.6527072Z From https://github.com/jorge-trivilin/scaffold-py
+2024-07-27T01:06:55.6528631Z  * [new ref]         7fac415e4535231ad5806c65c38acc0c73eb5a31 -> origin/main
+2024-07-27T01:06:55.6551695Z ##[endgroup]
+2024-07-27T01:06:55.6552970Z ##[group]Determining the checkout info
+2024-07-27T01:06:55.6555618Z ##[endgroup]
+2024-07-27T01:06:55.6557350Z ##[group]Checking out the ref
+2024-07-27T01:06:55.6559884Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2024-07-27T01:06:55.6606963Z Switched to a new branch 'main'
+2024-07-27T01:06:55.6610483Z branch 'main' set up to track 'origin/main'.
+2024-07-27T01:06:55.6616328Z ##[endgroup]
+2024-07-27T01:06:55.6658430Z [command]/usr/bin/git log -1 --format='%H'
+2024-07-27T01:06:55.6685003Z '7fac415e4535231ad5806c65c38acc0c73eb5a31'

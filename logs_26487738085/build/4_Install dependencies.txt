@@ -1,0 +1,81 @@
+﻿2024-07-27T01:06:55.8290534Z ##[group]Run make install
+2024-07-27T01:06:55.8291192Z [36;1mmake install[0m
+2024-07-27T01:06:55.8352757Z shell: /usr/bin/bash -e {0}
+2024-07-27T01:06:55.8353206Z env:
+2024-07-27T01:06:55.8353649Z   pythonLocation: /opt/hostedtoolcache/Python/3.8.18/x64
+2024-07-27T01:06:55.8354413Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.8.18/x64/lib
+2024-07-27T01:06:55.8354927Z ##[endgroup]
+2024-07-27T01:06:55.8528657Z pip install --upgrade pip
+2024-07-27T01:07:00.0145801Z Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages (24.1.2)
+2024-07-27T01:07:00.2648768Z pip install -r requirements.txt
+2024-07-27T01:07:00.7421508Z Collecting pytest==6.2.5 (from -r requirements.txt (line 1))
+2024-07-27T01:07:00.7554712Z   Downloading pytest-6.2.5-py3-none-any.whl.metadata (7.5 kB)
+2024-07-27T01:07:00.8363963Z Collecting pylint==2.10.2 (from -r requirements.txt (line 2))
+2024-07-27T01:07:00.8427126Z   Downloading pylint-2.10.2-py3-none-any.whl.metadata (7.7 kB)
+2024-07-27T01:07:00.8719711Z Collecting autopep8==1.5.7 (from -r requirements.txt (line 3))
+2024-07-27T01:07:00.8770184Z   Downloading autopep8-1.5.7-py2.py3-none-any.whl.metadata (16 kB)
+2024-07-27T01:07:00.9051288Z Collecting attrs>=19.2.0 (from pytest==6.2.5->-r requirements.txt (line 1))
+2024-07-27T01:07:00.9088809Z   Downloading attrs-23.2.0-py3-none-any.whl.metadata (9.5 kB)
+2024-07-27T01:07:00.9307139Z Collecting iniconfig (from pytest==6.2.5->-r requirements.txt (line 1))
+2024-07-27T01:07:00.9345606Z   Downloading iniconfig-2.0.0-py3-none-any.whl.metadata (2.6 kB)
+2024-07-27T01:07:00.9673483Z Collecting packaging (from pytest==6.2.5->-r requirements.txt (line 1))
+2024-07-27T01:07:00.9715010Z   Downloading packaging-24.1-py3-none-any.whl.metadata (3.2 kB)
+2024-07-27T01:07:00.9980414Z Collecting pluggy<2.0,>=0.12 (from pytest==6.2.5->-r requirements.txt (line 1))
+2024-07-27T01:07:01.0022152Z   Downloading pluggy-1.5.0-py3-none-any.whl.metadata (4.8 kB)
+2024-07-27T01:07:01.0321430Z Collecting py>=1.8.2 (from pytest==6.2.5->-r requirements.txt (line 1))
+2024-07-27T01:07:01.0361020Z   Downloading py-1.11.0-py2.py3-none-any.whl.metadata (2.8 kB)
+2024-07-27T01:07:01.0556374Z Collecting toml (from pytest==6.2.5->-r requirements.txt (line 1))
+2024-07-27T01:07:01.0595823Z   Downloading toml-0.10.2-py2.py3-none-any.whl.metadata (7.1 kB)
+2024-07-27T01:07:01.1009047Z Collecting platformdirs>=2.2.0 (from pylint==2.10.2->-r requirements.txt (line 2))
+2024-07-27T01:07:01.1050778Z   Downloading platformdirs-4.2.2-py3-none-any.whl.metadata (11 kB)
+2024-07-27T01:07:01.1750149Z Collecting astroid<2.8,>=2.7.2 (from pylint==2.10.2->-r requirements.txt (line 2))
+2024-07-27T01:07:01.1802803Z   Downloading astroid-2.7.3-py3-none-any.whl.metadata (4.7 kB)
+2024-07-27T01:07:01.2488724Z Collecting isort<6,>=4.2.5 (from pylint==2.10.2->-r requirements.txt (line 2))
+2024-07-27T01:07:01.2539246Z   Downloading isort-5.13.2-py3-none-any.whl.metadata (12 kB)
+2024-07-27T01:07:01.2744882Z Collecting mccabe<0.7,>=0.6 (from pylint==2.10.2->-r requirements.txt (line 2))
+2024-07-27T01:07:01.2784026Z   Downloading mccabe-0.6.1-py2.py3-none-any.whl.metadata (4.3 kB)
+2024-07-27T01:07:01.3037287Z Collecting pycodestyle>=2.7.0 (from autopep8==1.5.7->-r requirements.txt (line 3))
+2024-07-27T01:07:01.3075484Z   Downloading pycodestyle-2.12.0-py2.py3-none-any.whl.metadata (4.5 kB)
+2024-07-27T01:07:01.3635873Z Collecting lazy-object-proxy>=1.4.0 (from astroid<2.8,>=2.7.2->pylint==2.10.2->-r requirements.txt (line 2))
+2024-07-27T01:07:01.3688438Z   Downloading lazy_object_proxy-1.10.0-cp38-cp38-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (7.8 kB)
+2024-07-27T01:07:01.4717606Z Collecting wrapt<1.13,>=1.11 (from astroid<2.8,>=2.7.2->pylint==2.10.2->-r requirements.txt (line 2))
+2024-07-27T01:07:01.4772462Z   Downloading wrapt-1.12.1.tar.gz (27 kB)
+2024-07-27T01:07:01.4871681Z   Installing build dependencies: started
+2024-07-27T01:07:02.9925286Z   Installing build dependencies: finished with status 'done'
+2024-07-27T01:07:02.9935380Z   Getting requirements to build wheel: started
+2024-07-27T01:07:03.2889873Z   Getting requirements to build wheel: finished with status 'done'
+2024-07-27T01:07:03.2901088Z   Preparing metadata (pyproject.toml): started
+2024-07-27T01:07:03.5700006Z   Preparing metadata (pyproject.toml): finished with status 'done'
+2024-07-27T01:07:03.5727455Z Requirement already satisfied: setuptools>=20.0 in /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages (from astroid<2.8,>=2.7.2->pylint==2.10.2->-r requirements.txt (line 2)) (56.0.0)
+2024-07-27T01:07:03.5946511Z Downloading pytest-6.2.5-py3-none-any.whl (280 kB)
+2024-07-27T01:07:03.6037022Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 280.7/280.7 kB 46.7 MB/s eta 0:00:00
+2024-07-27T01:07:03.6092893Z Downloading pylint-2.10.2-py3-none-any.whl (392 kB)
+2024-07-27T01:07:03.6174259Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 392.6/392.6 kB 63.4 MB/s eta 0:00:00
+2024-07-27T01:07:03.6234627Z Downloading autopep8-1.5.7-py2.py3-none-any.whl (45 kB)
+2024-07-27T01:07:03.6283729Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.0/45.0 kB 12.6 MB/s eta 0:00:00
+2024-07-27T01:07:03.6340479Z Downloading astroid-2.7.3-py3-none-any.whl (240 kB)
+2024-07-27T01:07:03.6402816Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 240.6/240.6 kB 55.5 MB/s eta 0:00:00
+2024-07-27T01:07:03.6442726Z Downloading attrs-23.2.0-py3-none-any.whl (60 kB)
+2024-07-27T01:07:03.6496096Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 60.8/60.8 kB 17.9 MB/s eta 0:00:00
+2024-07-27T01:07:03.6537609Z Downloading isort-5.13.2-py3-none-any.whl (92 kB)
+2024-07-27T01:07:03.6590795Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 92.3/92.3 kB 25.5 MB/s eta 0:00:00
+2024-07-27T01:07:03.6627784Z Downloading mccabe-0.6.1-py2.py3-none-any.whl (8.6 kB)
+2024-07-27T01:07:03.6690745Z Downloading platformdirs-4.2.2-py3-none-any.whl (18 kB)
+2024-07-27T01:07:03.6753724Z Downloading pluggy-1.5.0-py3-none-any.whl (20 kB)
+2024-07-27T01:07:03.6819285Z Downloading py-1.11.0-py2.py3-none-any.whl (98 kB)
+2024-07-27T01:07:03.6869342Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 98.7/98.7 kB 30.5 MB/s eta 0:00:00
+2024-07-27T01:07:03.6913370Z Downloading pycodestyle-2.12.0-py2.py3-none-any.whl (31 kB)
+2024-07-27T01:07:03.6977763Z Downloading toml-0.10.2-py2.py3-none-any.whl (16 kB)
+2024-07-27T01:07:03.7046289Z Downloading iniconfig-2.0.0-py3-none-any.whl (5.9 kB)
+2024-07-27T01:07:03.7114624Z Downloading packaging-24.1-py3-none-any.whl (53 kB)
+2024-07-27T01:07:03.7160193Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.0/54.0 kB 17.6 MB/s eta 0:00:00
+2024-07-27T01:07:03.7209344Z Downloading lazy_object_proxy-1.10.0-cp38-cp38-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (66 kB)
+2024-07-27T01:07:03.7260658Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 66.4/66.4 kB 18.5 MB/s eta 0:00:00
+2024-07-27T01:07:03.7422177Z Building wheels for collected packages: wrapt
+2024-07-27T01:07:03.7432227Z   Building wheel for wrapt (pyproject.toml): started
+2024-07-27T01:07:04.8752128Z   Building wheel for wrapt (pyproject.toml): finished with status 'done'
+2024-07-27T01:07:04.8759339Z   Created wheel for wrapt: filename=wrapt-1.12.1-cp38-cp38-linux_x86_64.whl size=75905 sha256=1f9a961d2e0d8c964c78642aa23843a0dcaaba722e9f68ff74fdec5adf431026
+2024-07-27T01:07:04.8761506Z   Stored in directory: /home/runner/.cache/pip/wheels/5f/fd/9e/b6cf5890494cb8ef0b5eaff72e5d55a70fb56316007d6dfe73
+2024-07-27T01:07:04.8786117Z Successfully built wrapt
+2024-07-27T01:07:04.9063939Z Installing collected packages: wrapt, mccabe, toml, pycodestyle, py, pluggy, platformdirs, packaging, lazy-object-proxy, isort, iniconfig, attrs, pytest, autopep8, astroid, pylint
+2024-07-27T01:07:05.6460349Z Successfully installed astroid-2.7.3 attrs-23.2.0 autopep8-1.5.7 iniconfig-2.0.0 isort-5.13.2 lazy-object-proxy-1.10.0 mccabe-0.6.1 packaging-24.1 platformdirs-4.2.2 pluggy-1.5.0 py-1.11.0 pycodestyle-2.12.0 pylint-2.10.2 pytest-6.2.5 toml-0.10.2 wrapt-1.12.1

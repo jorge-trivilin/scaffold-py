@@ -1,0 +1,274 @@
+﻿2024-07-27T01:06:54.3288347Z Current runner version: '2.317.0'
+2024-07-27T01:06:54.3310945Z ##[group]Operating System
+2024-07-27T01:06:54.3311723Z Ubuntu
+2024-07-27T01:06:54.3312086Z 22.04.4
+2024-07-27T01:06:54.3312379Z LTS
+2024-07-27T01:06:54.3312816Z ##[endgroup]
+2024-07-27T01:06:54.3313197Z ##[group]Runner Image
+2024-07-27T01:06:54.3313592Z Image: ubuntu-22.04
+2024-07-27T01:06:54.3314079Z Version: 20240721.1.0
+2024-07-27T01:06:54.3315062Z Included Software: https://github.com/actions/runner-images/blob/ubuntu22/20240721.1/images/ubuntu/Ubuntu2204-Readme.md
+2024-07-27T01:06:54.3316461Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20240721.1
+2024-07-27T01:06:54.3317415Z ##[endgroup]
+2024-07-27T01:06:54.3317809Z ##[group]Runner Image Provisioner
+2024-07-27T01:06:54.3318271Z 2.0.373.1
+2024-07-27T01:06:54.3318672Z ##[endgroup]
+2024-07-27T01:06:54.3320964Z ##[group]GITHUB_TOKEN Permissions
+2024-07-27T01:06:54.3322646Z Actions: write
+2024-07-27T01:06:54.3323276Z Attestations: write
+2024-07-27T01:06:54.3323835Z Checks: write
+2024-07-27T01:06:54.3324202Z Contents: write
+2024-07-27T01:06:54.3324664Z Deployments: write
+2024-07-27T01:06:54.3325033Z Discussions: write
+2024-07-27T01:06:54.3325429Z Issues: write
+2024-07-27T01:06:54.3325856Z Metadata: read
+2024-07-27T01:06:54.3326205Z Packages: write
+2024-07-27T01:06:54.3326633Z Pages: write
+2024-07-27T01:06:54.3326970Z PullRequests: write
+2024-07-27T01:06:54.3327459Z RepositoryProjects: write
+2024-07-27T01:06:54.3327922Z SecurityEvents: write
+2024-07-27T01:06:54.3328303Z Statuses: write
+2024-07-27T01:06:54.3328776Z ##[endgroup]
+2024-07-27T01:06:54.3331801Z Secret source: Actions
+2024-07-27T01:06:54.3332341Z Prepare workflow directory
+2024-07-27T01:06:54.3947728Z Prepare all required actions
+2024-07-27T01:06:54.4115624Z Getting action download info
+2024-07-27T01:06:54.6159405Z Download action repository 'actions/checkout@v2' (SHA:ee0669bd1cc54295c223e0bb666b733df41de1c5)
+2024-07-27T01:06:54.7300391Z Download action repository 'actions/setup-python@v2' (SHA:e9aba2c848f5ebd159c070c61ea2c4e2b122355e)
+2024-07-27T01:06:54.8924571Z Complete job name: build
+2024-07-27T01:06:55.0009435Z ##[group]Run actions/checkout@v2
+2024-07-27T01:06:55.0010149Z with:
+2024-07-27T01:06:55.0010563Z   repository: jorge-trivilin/scaffold-py
+2024-07-27T01:06:55.0011283Z   token: ***
+2024-07-27T01:06:55.0011777Z   ssh-strict: true
+2024-07-27T01:06:55.0012202Z   persist-credentials: true
+2024-07-27T01:06:55.0012644Z   clean: true
+2024-07-27T01:06:55.0013101Z   fetch-depth: 1
+2024-07-27T01:06:55.0013496Z   lfs: false
+2024-07-27T01:06:55.0013849Z   submodules: false
+2024-07-27T01:06:55.0014346Z   set-safe-directory: true
+2024-07-27T01:06:55.0014789Z ##[endgroup]
+2024-07-27T01:06:55.1846612Z Syncing repository: jorge-trivilin/scaffold-py
+2024-07-27T01:06:55.1849652Z ##[group]Getting Git version info
+2024-07-27T01:06:55.1851092Z Working directory is '/home/runner/work/scaffold-py/scaffold-py'
+2024-07-27T01:06:55.1853111Z [command]/usr/bin/git version
+2024-07-27T01:06:55.1853969Z git version 2.45.2
+2024-07-27T01:06:55.1867845Z ##[endgroup]
+2024-07-27T01:06:55.1889652Z Temporarily overriding HOME='/home/runner/work/_temp/b784d985-f976-472d-b3df-94ae528da9f9' before making global git config changes
+2024-07-27T01:06:55.1892032Z Adding repository directory to the temporary git global config as a safe directory
+2024-07-27T01:06:55.1894312Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/scaffold-py/scaffold-py
+2024-07-27T01:06:55.1930839Z Deleting the contents of '/home/runner/work/scaffold-py/scaffold-py'
+2024-07-27T01:06:55.1934556Z ##[group]Initializing the repository
+2024-07-27T01:06:55.1940091Z [command]/usr/bin/git init /home/runner/work/scaffold-py/scaffold-py
+2024-07-27T01:06:55.2009422Z hint: Using 'master' as the name for the initial branch. This default branch name
+2024-07-27T01:06:55.2011361Z hint: is subject to change. To configure the initial branch name to use in all
+2024-07-27T01:06:55.2013256Z hint: of your new repositories, which will suppress this warning, call:
+2024-07-27T01:06:55.2014900Z hint:
+2024-07-27T01:06:55.2015812Z hint: 	git config --global init.defaultBranch <name>
+2024-07-27T01:06:55.2016943Z hint:
+2024-07-27T01:06:55.2018011Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2024-07-27T01:06:55.2019738Z hint: 'development'. The just-created branch can be renamed via this command:
+2024-07-27T01:06:55.2021105Z hint:
+2024-07-27T01:06:55.2021794Z hint: 	git branch -m <name>
+2024-07-27T01:06:55.2023397Z Initialized empty Git repository in /home/runner/work/scaffold-py/scaffold-py/.git/
+2024-07-27T01:06:55.2025439Z [command]/usr/bin/git remote add origin https://github.com/jorge-trivilin/scaffold-py
+2024-07-27T01:06:55.2052744Z ##[endgroup]
+2024-07-27T01:06:55.2054118Z ##[group]Disabling automatic garbage collection
+2024-07-27T01:06:55.2057382Z [command]/usr/bin/git config --local gc.auto 0
+2024-07-27T01:06:55.2093022Z ##[endgroup]
+2024-07-27T01:06:55.2094486Z ##[group]Setting up auth
+2024-07-27T01:06:55.2100592Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2024-07-27T01:06:55.2132075Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2024-07-27T01:06:55.2431926Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2024-07-27T01:06:55.2459474Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2024-07-27T01:06:55.2694668Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2024-07-27T01:06:55.2730630Z ##[endgroup]
+2024-07-27T01:06:55.2732039Z ##[group]Fetching the repository
+2024-07-27T01:06:55.2739886Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +7fac415e4535231ad5806c65c38acc0c73eb5a31:refs/remotes/origin/main
+2024-07-27T01:06:55.6472376Z remote: Enumerating objects: 10, done.        
+2024-07-27T01:06:55.6473966Z remote: Counting objects:  10% (1/10)        
+2024-07-27T01:06:55.6475184Z remote: Counting objects:  20% (2/10)        
+2024-07-27T01:06:55.6476367Z remote: Counting objects:  30% (3/10)        
+2024-07-27T01:06:55.6477623Z remote: Counting objects:  40% (4/10)        
+2024-07-27T01:06:55.6478440Z remote: Counting objects:  50% (5/10)        
+2024-07-27T01:06:55.6479090Z remote: Counting objects:  60% (6/10)        
+2024-07-27T01:06:55.6480039Z remote: Counting objects:  70% (7/10)        
+2024-07-27T01:06:55.6481115Z remote: Counting objects:  80% (8/10)        
+2024-07-27T01:06:55.6482125Z remote: Counting objects:  90% (9/10)        
+2024-07-27T01:06:55.6483296Z remote: Counting objects: 100% (10/10)        
+2024-07-27T01:06:55.6484406Z remote: Counting objects: 100% (10/10), done.        
+2024-07-27T01:06:55.6485146Z remote: Compressing objects:  14% (1/7)        
+2024-07-27T01:06:55.6486598Z remote: Compressing objects:  28% (2/7)        
+2024-07-27T01:06:55.6487755Z remote: Compressing objects:  42% (3/7)        
+2024-07-27T01:06:55.6488909Z remote: Compressing objects:  57% (4/7)        
+2024-07-27T01:06:55.6490393Z remote: Compressing objects:  71% (5/7)        
+2024-07-27T01:06:55.6491697Z remote: Compressing objects:  85% (6/7)        
+2024-07-27T01:06:55.6492833Z remote: Compressing objects: 100% (7/7)        
+2024-07-27T01:06:55.6494285Z remote: Compressing objects: 100% (7/7), done.        
+2024-07-27T01:06:55.6495880Z remote: Total 10 (delta 0), reused 5 (delta 0), pack-reused 0        
+2024-07-27T01:06:55.6527094Z From https://github.com/jorge-trivilin/scaffold-py
+2024-07-27T01:06:55.6528642Z  * [new ref]         7fac415e4535231ad5806c65c38acc0c73eb5a31 -> origin/main
+2024-07-27T01:06:55.6551713Z ##[endgroup]
+2024-07-27T01:06:55.6552979Z ##[group]Determining the checkout info
+2024-07-27T01:06:55.6555631Z ##[endgroup]
+2024-07-27T01:06:55.6557364Z ##[group]Checking out the ref
+2024-07-27T01:06:55.6559921Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2024-07-27T01:06:55.6606983Z Switched to a new branch 'main'
+2024-07-27T01:06:55.6610500Z branch 'main' set up to track 'origin/main'.
+2024-07-27T01:06:55.6616345Z ##[endgroup]
+2024-07-27T01:06:55.6658452Z [command]/usr/bin/git log -1 --format='%H'
+2024-07-27T01:06:55.6685022Z '7fac415e4535231ad5806c65c38acc0c73eb5a31'
+2024-07-27T01:06:55.7032854Z ##[group]Run actions/setup-python@v2
+2024-07-27T01:06:55.7033469Z with:
+2024-07-27T01:06:55.7033836Z   python-version: 3.8
+2024-07-27T01:06:55.7034371Z   token: ***
+2024-07-27T01:06:55.7034819Z ##[endgroup]
+2024-07-27T01:06:55.8159411Z Successfully setup CPython (3.8.18)
+2024-07-27T01:06:55.8290700Z ##[group]Run make install
+2024-07-27T01:06:55.8291197Z [36;1mmake install[0m
+2024-07-27T01:06:55.8352773Z shell: /usr/bin/bash -e {0}
+2024-07-27T01:06:55.8353210Z env:
+2024-07-27T01:06:55.8353653Z   pythonLocation: /opt/hostedtoolcache/Python/3.8.18/x64
+2024-07-27T01:06:55.8354418Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.8.18/x64/lib
+2024-07-27T01:06:55.8354930Z ##[endgroup]
+2024-07-27T01:06:55.8528677Z pip install --upgrade pip
+2024-07-27T01:07:00.0145848Z Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages (24.1.2)
+2024-07-27T01:07:00.2648814Z pip install -r requirements.txt
+2024-07-27T01:07:00.7421554Z Collecting pytest==6.2.5 (from -r requirements.txt (line 1))
+2024-07-27T01:07:00.7554750Z   Downloading pytest-6.2.5-py3-none-any.whl.metadata (7.5 kB)
+2024-07-27T01:07:00.8363990Z Collecting pylint==2.10.2 (from -r requirements.txt (line 2))
+2024-07-27T01:07:00.8427349Z   Downloading pylint-2.10.2-py3-none-any.whl.metadata (7.7 kB)
+2024-07-27T01:07:00.8719725Z Collecting autopep8==1.5.7 (from -r requirements.txt (line 3))
+2024-07-27T01:07:00.8770194Z   Downloading autopep8-1.5.7-py2.py3-none-any.whl.metadata (16 kB)
+2024-07-27T01:07:00.9051309Z Collecting attrs>=19.2.0 (from pytest==6.2.5->-r requirements.txt (line 1))
+2024-07-27T01:07:00.9088860Z   Downloading attrs-23.2.0-py3-none-any.whl.metadata (9.5 kB)
+2024-07-27T01:07:00.9307158Z Collecting iniconfig (from pytest==6.2.5->-r requirements.txt (line 1))
+2024-07-27T01:07:00.9345618Z   Downloading iniconfig-2.0.0-py3-none-any.whl.metadata (2.6 kB)
+2024-07-27T01:07:00.9673510Z Collecting packaging (from pytest==6.2.5->-r requirements.txt (line 1))
+2024-07-27T01:07:00.9715020Z   Downloading packaging-24.1-py3-none-any.whl.metadata (3.2 kB)
+2024-07-27T01:07:00.9980464Z Collecting pluggy<2.0,>=0.12 (from pytest==6.2.5->-r requirements.txt (line 1))
+2024-07-27T01:07:01.0022169Z   Downloading pluggy-1.5.0-py3-none-any.whl.metadata (4.8 kB)
+2024-07-27T01:07:01.0321477Z Collecting py>=1.8.2 (from pytest==6.2.5->-r requirements.txt (line 1))
+2024-07-27T01:07:01.0361031Z   Downloading py-1.11.0-py2.py3-none-any.whl.metadata (2.8 kB)
+2024-07-27T01:07:01.0556401Z Collecting toml (from pytest==6.2.5->-r requirements.txt (line 1))
+2024-07-27T01:07:01.0595835Z   Downloading toml-0.10.2-py2.py3-none-any.whl.metadata (7.1 kB)
+2024-07-27T01:07:01.1009084Z Collecting platformdirs>=2.2.0 (from pylint==2.10.2->-r requirements.txt (line 2))
+2024-07-27T01:07:01.1050837Z   Downloading platformdirs-4.2.2-py3-none-any.whl.metadata (11 kB)
+2024-07-27T01:07:01.1750196Z Collecting astroid<2.8,>=2.7.2 (from pylint==2.10.2->-r requirements.txt (line 2))
+2024-07-27T01:07:01.1802819Z   Downloading astroid-2.7.3-py3-none-any.whl.metadata (4.7 kB)
+2024-07-27T01:07:01.2488770Z Collecting isort<6,>=4.2.5 (from pylint==2.10.2->-r requirements.txt (line 2))
+2024-07-27T01:07:01.2539275Z   Downloading isort-5.13.2-py3-none-any.whl.metadata (12 kB)
+2024-07-27T01:07:01.2744944Z Collecting mccabe<0.7,>=0.6 (from pylint==2.10.2->-r requirements.txt (line 2))
+2024-07-27T01:07:01.2784040Z   Downloading mccabe-0.6.1-py2.py3-none-any.whl.metadata (4.3 kB)
+2024-07-27T01:07:01.3037329Z Collecting pycodestyle>=2.7.0 (from autopep8==1.5.7->-r requirements.txt (line 3))
+2024-07-27T01:07:01.3075494Z   Downloading pycodestyle-2.12.0-py2.py3-none-any.whl.metadata (4.5 kB)
+2024-07-27T01:07:01.3635900Z Collecting lazy-object-proxy>=1.4.0 (from astroid<2.8,>=2.7.2->pylint==2.10.2->-r requirements.txt (line 2))
+2024-07-27T01:07:01.3688457Z   Downloading lazy_object_proxy-1.10.0-cp38-cp38-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (7.8 kB)
+2024-07-27T01:07:01.4717656Z Collecting wrapt<1.13,>=1.11 (from astroid<2.8,>=2.7.2->pylint==2.10.2->-r requirements.txt (line 2))
+2024-07-27T01:07:01.4772482Z   Downloading wrapt-1.12.1.tar.gz (27 kB)
+2024-07-27T01:07:01.4871696Z   Installing build dependencies: started
+2024-07-27T01:07:02.9926136Z   Installing build dependencies: finished with status 'done'
+2024-07-27T01:07:02.9935397Z   Getting requirements to build wheel: started
+2024-07-27T01:07:03.2889917Z   Getting requirements to build wheel: finished with status 'done'
+2024-07-27T01:07:03.2901102Z   Preparing metadata (pyproject.toml): started
+2024-07-27T01:07:03.5700043Z   Preparing metadata (pyproject.toml): finished with status 'done'
+2024-07-27T01:07:03.5727468Z Requirement already satisfied: setuptools>=20.0 in /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages (from astroid<2.8,>=2.7.2->pylint==2.10.2->-r requirements.txt (line 2)) (56.0.0)
+2024-07-27T01:07:03.5946524Z Downloading pytest-6.2.5-py3-none-any.whl (280 kB)
+2024-07-27T01:07:03.6037040Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 280.7/280.7 kB 46.7 MB/s eta 0:00:00
+2024-07-27T01:07:03.6092912Z Downloading pylint-2.10.2-py3-none-any.whl (392 kB)
+2024-07-27T01:07:03.6174278Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 392.6/392.6 kB 63.4 MB/s eta 0:00:00
+2024-07-27T01:07:03.6234676Z Downloading autopep8-1.5.7-py2.py3-none-any.whl (45 kB)
+2024-07-27T01:07:03.6283746Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.0/45.0 kB 12.6 MB/s eta 0:00:00
+2024-07-27T01:07:03.6340494Z Downloading astroid-2.7.3-py3-none-any.whl (240 kB)
+2024-07-27T01:07:03.6402834Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 240.6/240.6 kB 55.5 MB/s eta 0:00:00
+2024-07-27T01:07:03.6442742Z Downloading attrs-23.2.0-py3-none-any.whl (60 kB)
+2024-07-27T01:07:03.6496111Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 60.8/60.8 kB 17.9 MB/s eta 0:00:00
+2024-07-27T01:07:03.6537620Z Downloading isort-5.13.2-py3-none-any.whl (92 kB)
+2024-07-27T01:07:03.6590812Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 92.3/92.3 kB 25.5 MB/s eta 0:00:00
+2024-07-27T01:07:03.6627801Z Downloading mccabe-0.6.1-py2.py3-none-any.whl (8.6 kB)
+2024-07-27T01:07:03.6690761Z Downloading platformdirs-4.2.2-py3-none-any.whl (18 kB)
+2024-07-27T01:07:03.6753740Z Downloading pluggy-1.5.0-py3-none-any.whl (20 kB)
+2024-07-27T01:07:03.6819325Z Downloading py-1.11.0-py2.py3-none-any.whl (98 kB)
+2024-07-27T01:07:03.6869360Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 98.7/98.7 kB 30.5 MB/s eta 0:00:00
+2024-07-27T01:07:03.6913386Z Downloading pycodestyle-2.12.0-py2.py3-none-any.whl (31 kB)
+2024-07-27T01:07:03.6977779Z Downloading toml-0.10.2-py2.py3-none-any.whl (16 kB)
+2024-07-27T01:07:03.7046573Z Downloading iniconfig-2.0.0-py3-none-any.whl (5.9 kB)
+2024-07-27T01:07:03.7114640Z Downloading packaging-24.1-py3-none-any.whl (53 kB)
+2024-07-27T01:07:03.7160210Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.0/54.0 kB 17.6 MB/s eta 0:00:00
+2024-07-27T01:07:03.7209360Z Downloading lazy_object_proxy-1.10.0-cp38-cp38-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (66 kB)
+2024-07-27T01:07:03.7260724Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 66.4/66.4 kB 18.5 MB/s eta 0:00:00
+2024-07-27T01:07:03.7422192Z Building wheels for collected packages: wrapt
+2024-07-27T01:07:03.7432242Z   Building wheel for wrapt (pyproject.toml): started
+2024-07-27T01:07:04.8752202Z   Building wheel for wrapt (pyproject.toml): finished with status 'done'
+2024-07-27T01:07:04.8759349Z   Created wheel for wrapt: filename=wrapt-1.12.1-cp38-cp38-linux_x86_64.whl size=75905 sha256=1f9a961d2e0d8c964c78642aa23843a0dcaaba722e9f68ff74fdec5adf431026
+2024-07-27T01:07:04.8761513Z   Stored in directory: /home/runner/.cache/pip/wheels/5f/fd/9e/b6cf5890494cb8ef0b5eaff72e5d55a70fb56316007d6dfe73
+2024-07-27T01:07:04.8786126Z Successfully built wrapt
+2024-07-27T01:07:04.9063952Z Installing collected packages: wrapt, mccabe, toml, pycodestyle, py, pluggy, platformdirs, packaging, lazy-object-proxy, isort, iniconfig, attrs, pytest, autopep8, astroid, pylint
+2024-07-27T01:07:05.6460387Z Successfully installed astroid-2.7.3 attrs-23.2.0 autopep8-1.5.7 iniconfig-2.0.0 isort-5.13.2 lazy-object-proxy-1.10.0 mccabe-0.6.1 packaging-24.1 platformdirs-4.2.2 pluggy-1.5.0 py-1.11.0 pycodestyle-2.12.0 pylint-2.10.2 pytest-6.2.5 toml-0.10.2 wrapt-1.12.1
+2024-07-27T01:07:05.7464003Z ##[group]Run make lint
+2024-07-27T01:07:05.7464437Z [36;1mmake lint[0m
+2024-07-27T01:07:05.7518922Z shell: /usr/bin/bash -e {0}
+2024-07-27T01:07:05.7519412Z env:
+2024-07-27T01:07:05.7519800Z   pythonLocation: /opt/hostedtoolcache/Python/3.8.18/x64
+2024-07-27T01:07:05.7520402Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.8.18/x64/lib
+2024-07-27T01:07:05.7520989Z ##[endgroup]
+2024-07-27T01:07:05.7615314Z pylint hello.py
+2024-07-27T01:07:06.5081681Z 
+2024-07-27T01:07:06.5082465Z ------------------------------------
+2024-07-27T01:07:06.5083575Z Your code has been rated at 10.00/10
+2024-07-27T01:07:06.5090293Z 
+2024-07-27T01:07:06.5555137Z ##[group]Run make test
+2024-07-27T01:07:06.5555527Z [36;1mmake test[0m
+2024-07-27T01:07:06.5610391Z shell: /usr/bin/bash -e {0}
+2024-07-27T01:07:06.5610906Z env:
+2024-07-27T01:07:06.5611291Z   pythonLocation: /opt/hostedtoolcache/Python/3.8.18/x64
+2024-07-27T01:07:06.5611902Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.8.18/x64/lib
+2024-07-27T01:07:06.5612504Z ##[endgroup]
+2024-07-27T01:07:06.5705293Z pytest
+2024-07-27T01:07:07.1911938Z ============================= test session starts ==============================
+2024-07-27T01:07:07.1913651Z platform linux -- Python 3.8.18, pytest-6.2.5, py-1.11.0, pluggy-1.5.0
+2024-07-27T01:07:07.1914924Z rootdir: /home/runner/work/scaffold-py/scaffold-py
+2024-07-27T01:07:07.1915733Z collected 1 item
+2024-07-27T01:07:07.1916046Z 
+2024-07-27T01:07:07.1991402Z test_hello.py .                                                          [100%]
+2024-07-27T01:07:07.1992177Z 
+2024-07-27T01:07:07.1992626Z ============================== 1 passed in 0.01s ===============================
+2024-07-27T01:07:07.2180736Z ##[group]Run make format
+2024-07-27T01:07:07.2181467Z [36;1mmake format[0m
+2024-07-27T01:07:07.2182684Z [36;1mgit config --global user.email "jorge.trivilin@gmail.com"[0m
+2024-07-27T01:07:07.2183866Z [36;1mgit config --global user.name "Jorge Trivilin"[0m
+2024-07-27T01:07:07.2184752Z [36;1mgit add hello.py[0m
+2024-07-27T01:07:07.2185778Z [36;1mgit commit -m "Auto-format code" || echo "No changes to commit"[0m
+2024-07-27T01:07:07.2242575Z shell: /usr/bin/bash -e {0}
+2024-07-27T01:07:07.2243047Z env:
+2024-07-27T01:07:07.2243450Z   pythonLocation: /opt/hostedtoolcache/Python/3.8.18/x64
+2024-07-27T01:07:07.2244102Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.8.18/x64/lib
+2024-07-27T01:07:07.2244638Z ##[endgroup]
+2024-07-27T01:07:07.2338468Z autopep8 --in-place --aggressive --aggressive hello.py
+2024-07-27T01:07:07.6400385Z [main 5076823] Auto-format code
+2024-07-27T01:07:07.6401379Z  1 file changed, 3 insertions(+), 1 deletion(-)
+2024-07-27T01:07:07.6444179Z ##[group]Run git push origin main
+2024-07-27T01:07:07.6444639Z [36;1mgit push origin main[0m
+2024-07-27T01:07:07.6498971Z shell: /usr/bin/bash -e {0}
+2024-07-27T01:07:07.6499482Z env:
+2024-07-27T01:07:07.6499848Z   pythonLocation: /opt/hostedtoolcache/Python/3.8.18/x64
+2024-07-27T01:07:07.6500466Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.8.18/x64/lib
+2024-07-27T01:07:07.6501401Z   GITHUB_TOKEN: ***
+2024-07-27T01:07:07.6501724Z ##[endgroup]
+2024-07-27T01:07:08.4551565Z To https://github.com/jorge-trivilin/scaffold-py
+2024-07-27T01:07:08.4552568Z    7fac415..5076823  main -> main
+2024-07-27T01:07:08.4641522Z Post job cleanup.
+2024-07-27T01:07:08.5731208Z Post job cleanup.
+2024-07-27T01:07:08.6590553Z [command]/usr/bin/git version
+2024-07-27T01:07:08.6628111Z git version 2.45.2
+2024-07-27T01:07:08.6665775Z Copying '/home/runner/.gitconfig' to '/home/runner/work/_temp/fc9fccfb-5f27-425e-90f3-2c1241fcd095/.gitconfig'
+2024-07-27T01:07:08.6676714Z Temporarily overriding HOME='/home/runner/work/_temp/fc9fccfb-5f27-425e-90f3-2c1241fcd095' before making global git config changes
+2024-07-27T01:07:08.6678631Z Adding repository directory to the temporary git global config as a safe directory
+2024-07-27T01:07:08.6680561Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/scaffold-py/scaffold-py
+2024-07-27T01:07:08.6714810Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2024-07-27T01:07:08.6746648Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2024-07-27T01:07:08.6989440Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2024-07-27T01:07:08.7011213Z http.https://github.com/.extraheader
+2024-07-27T01:07:08.7021519Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2024-07-27T01:07:08.7052563Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2024-07-27T01:07:08.7550030Z Cleaning up orphan processes

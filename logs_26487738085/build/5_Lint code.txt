@@ -1,0 +1,12 @@
+﻿2024-07-27T01:07:05.7463989Z ##[group]Run make lint
+2024-07-27T01:07:05.7464433Z [36;1mmake lint[0m
+2024-07-27T01:07:05.7518913Z shell: /usr/bin/bash -e {0}
+2024-07-27T01:07:05.7519408Z env:
+2024-07-27T01:07:05.7519796Z   pythonLocation: /opt/hostedtoolcache/Python/3.8.18/x64
+2024-07-27T01:07:05.7520398Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.8.18/x64/lib
+2024-07-27T01:07:05.7520986Z ##[endgroup]
+2024-07-27T01:07:05.7615297Z pylint hello.py
+2024-07-27T01:07:06.5081650Z 
+2024-07-27T01:07:06.5082447Z ------------------------------------
+2024-07-27T01:07:06.5083566Z Your code has been rated at 10.00/10
+2024-07-27T01:07:06.5090275Z 

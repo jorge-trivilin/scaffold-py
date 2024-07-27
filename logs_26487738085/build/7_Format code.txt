@@ -1,0 +1,14 @@
+﻿2024-07-27T01:07:07.2180721Z ##[group]Run make format
+2024-07-27T01:07:07.2181456Z [36;1mmake format[0m
+2024-07-27T01:07:07.2182671Z [36;1mgit config --global user.email "jorge.trivilin@gmail.com"[0m
+2024-07-27T01:07:07.2183854Z [36;1mgit config --global user.name "Jorge Trivilin"[0m
+2024-07-27T01:07:07.2184741Z [36;1mgit add hello.py[0m
+2024-07-27T01:07:07.2185767Z [36;1mgit commit -m "Auto-format code" || echo "No changes to commit"[0m
+2024-07-27T01:07:07.2242568Z shell: /usr/bin/bash -e {0}
+2024-07-27T01:07:07.2243043Z env:
+2024-07-27T01:07:07.2243447Z   pythonLocation: /opt/hostedtoolcache/Python/3.8.18/x64
+2024-07-27T01:07:07.2244099Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.8.18/x64/lib
+2024-07-27T01:07:07.2244635Z ##[endgroup]
+2024-07-27T01:07:07.2338453Z autopep8 --in-place --aggressive --aggressive hello.py
+2024-07-27T01:07:07.6400352Z [main 5076823] Auto-format code
+2024-07-27T01:07:07.6401373Z  1 file changed, 3 insertions(+), 1 deletion(-)

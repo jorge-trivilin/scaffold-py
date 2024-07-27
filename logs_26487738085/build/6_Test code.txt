@@ -1,0 +1,16 @@
+﻿2024-07-27T01:07:06.5555123Z ##[group]Run make test
+2024-07-27T01:07:06.5555523Z [36;1mmake test[0m
+2024-07-27T01:07:06.5610384Z shell: /usr/bin/bash -e {0}
+2024-07-27T01:07:06.5610760Z env:
+2024-07-27T01:07:06.5611288Z   pythonLocation: /opt/hostedtoolcache/Python/3.8.18/x64
+2024-07-27T01:07:06.5611898Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.8.18/x64/lib
+2024-07-27T01:07:06.5612500Z ##[endgroup]
+2024-07-27T01:07:06.5705278Z pytest
+2024-07-27T01:07:07.1911893Z ============================= test session starts ==============================
+2024-07-27T01:07:07.1913637Z platform linux -- Python 3.8.18, pytest-6.2.5, py-1.11.0, pluggy-1.5.0
+2024-07-27T01:07:07.1914915Z rootdir: /home/runner/work/scaffold-py/scaffold-py
+2024-07-27T01:07:07.1915726Z collected 1 item
+2024-07-27T01:07:07.1916041Z 
+2024-07-27T01:07:07.1991384Z test_hello.py .                                                          [100%]
+2024-07-27T01:07:07.1992171Z 
+2024-07-27T01:07:07.1992494Z ============================== 1 passed in 0.01s ===============================

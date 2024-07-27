@@ -1,0 +1,10 @@
+﻿2024-07-27T01:07:07.6444169Z ##[group]Run git push origin main
+2024-07-27T01:07:07.6444636Z [36;1mgit push origin main[0m
+2024-07-27T01:07:07.6498964Z shell: /usr/bin/bash -e {0}
+2024-07-27T01:07:07.6499479Z env:
+2024-07-27T01:07:07.6499845Z   pythonLocation: /opt/hostedtoolcache/Python/3.8.18/x64
+2024-07-27T01:07:07.6500462Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.8.18/x64/lib
+2024-07-27T01:07:07.6501397Z   GITHUB_TOKEN: ***
+2024-07-27T01:07:07.6501721Z ##[endgroup]
+2024-07-27T01:07:08.4551537Z To https://github.com/jorge-trivilin/scaffold-py
+2024-07-27T01:07:08.4552559Z    7fac415..5076823  main -> main

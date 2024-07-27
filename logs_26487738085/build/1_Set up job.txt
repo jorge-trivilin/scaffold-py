@@ -1,0 +1,38 @@
+﻿2024-07-27T01:06:54.3287816Z Current runner version: '2.317.0'
+2024-07-27T01:06:54.3310929Z ##[group]Operating System
+2024-07-27T01:06:54.3311717Z Ubuntu
+2024-07-27T01:06:54.3312083Z 22.04.4
+2024-07-27T01:06:54.3312376Z LTS
+2024-07-27T01:06:54.3312812Z ##[endgroup]
+2024-07-27T01:06:54.3313194Z ##[group]Runner Image
+2024-07-27T01:06:54.3313589Z Image: ubuntu-22.04
+2024-07-27T01:06:54.3314076Z Version: 20240721.1.0
+2024-07-27T01:06:54.3315057Z Included Software: https://github.com/actions/runner-images/blob/ubuntu22/20240721.1/images/ubuntu/Ubuntu2204-Readme.md
+2024-07-27T01:06:54.3316457Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20240721.1
+2024-07-27T01:06:54.3317412Z ##[endgroup]
+2024-07-27T01:06:54.3317805Z ##[group]Runner Image Provisioner
+2024-07-27T01:06:54.3318267Z 2.0.373.1
+2024-07-27T01:06:54.3318669Z ##[endgroup]
+2024-07-27T01:06:54.3320960Z ##[group]GITHUB_TOKEN Permissions
+2024-07-27T01:06:54.3322633Z Actions: write
+2024-07-27T01:06:54.3323080Z Attestations: write
+2024-07-27T01:06:54.3323831Z Checks: write
+2024-07-27T01:06:54.3324199Z Contents: write
+2024-07-27T01:06:54.3324661Z Deployments: write
+2024-07-27T01:06:54.3325030Z Discussions: write
+2024-07-27T01:06:54.3325426Z Issues: write
+2024-07-27T01:06:54.3325853Z Metadata: read
+2024-07-27T01:06:54.3326202Z Packages: write
+2024-07-27T01:06:54.3326631Z Pages: write
+2024-07-27T01:06:54.3326967Z PullRequests: write
+2024-07-27T01:06:54.3327456Z RepositoryProjects: write
+2024-07-27T01:06:54.3327919Z SecurityEvents: write
+2024-07-27T01:06:54.3328300Z Statuses: write
+2024-07-27T01:06:54.3328762Z ##[endgroup]
+2024-07-27T01:06:54.3331786Z Secret source: Actions
+2024-07-27T01:06:54.3332337Z Prepare workflow directory
+2024-07-27T01:06:54.3947711Z Prepare all required actions
+2024-07-27T01:06:54.4115601Z Getting action download info
+2024-07-27T01:06:54.6159382Z Download action repository 'actions/checkout@v2' (SHA:ee0669bd1cc54295c223e0bb666b733df41de1c5)
+2024-07-27T01:06:54.7300349Z Download action repository 'actions/setup-python@v2' (SHA:e9aba2c848f5ebd159c070c61ea2c4e2b122355e)
+2024-07-27T01:06:54.8924549Z Complete job name: build
