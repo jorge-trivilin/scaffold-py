@@ -2,21 +2,19 @@ trigger:
 - main
 
 pool:
-  name: 'scaffold-py'
+  name: 'scaffold-py '    # Nome do pool onde o agente auto-hospedado está configurado
 
-resources:
-  containers:
-  - container: python
-    image: jorgetrivilin/scaffold-py:latest
-    endpoint: DockerHubConnection
+variables:
+  containerRegistry: 'jorgetrivilin'  # Você também pode definir isso como uma variável de ambiente se quiser
 
 steps:
 - task: DockerInstaller@0
   displayName: 'Install Docker'
 
 - script: |
+    echo $(DOCKER_PASSWORD) | docker login -u $(DOCKER_USERNAME) --password-stdin
     docker pull $(containerRegistry)/scaffold-py:latest
-  displayName: 'Pull Docker image'
+  displayName: 'Login to Docker and Pull Docker image'
 
 - script: |
     docker run $(containerRegistry)/scaffold-py:latest pylint hello.py
