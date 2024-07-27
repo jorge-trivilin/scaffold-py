@@ -44,5 +44,3 @@ options:
   dynamicSubstitutions: true
 
 timeout: '900s'
-
-logsBucket: gs://scaffold-py/logs
