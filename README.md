@@ -6,10 +6,6 @@ This repository provides a scaffold for Python projects with a focus on continuo
 
 *Jorge Trivilin.* 
 
-*Connect with me here:*
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Jorge_Trivilin-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/jorgetrivilin/)
-
 ## Project Structure
 
 ```
