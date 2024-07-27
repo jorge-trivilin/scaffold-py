@@ -1,0 +1,168 @@
+2024-07-27T20:32:53.6867925Z ##[section]Starting: Job
+2024-07-27T20:32:53.8695464Z ##[section]Starting: Initialize job
+2024-07-27T20:32:53.8697892Z Agent name: 'X512FB'
+2024-07-27T20:32:53.8698128Z Agent machine name: 'X512FB'
+2024-07-27T20:32:53.8698347Z Current agent version: '3.242.1'
+2024-07-27T20:32:53.9370238Z Agent running as: 'kz'
+2024-07-27T20:32:53.9425153Z Prepare build directory.
+2024-07-27T20:32:53.9970370Z Set build variables.
+2024-07-27T20:32:54.0012387Z Download all required tasks.
+2024-07-27T20:32:54.1937071Z Checking job knob settings.
+2024-07-27T20:32:54.1957428Z    Knob: DockerActionRetries = true Source: $(VSTSAGENT_DOCKER_ACTION_RETRIES) 
+2024-07-27T20:32:54.1960992Z    Knob: UseGitLongPaths = true Source: $(USE_GIT_LONG_PATHS) 
+2024-07-27T20:32:54.1964252Z    Knob: EnableIssueSourceValidation = true Source: $(ENABLE_ISSUE_SOURCE_VALIDATION) 
+2024-07-27T20:32:54.1965496Z    Knob: AgentEnablePipelineArtifactLargeChunkSize = true Source: $(AGENT_ENABLE_PIPELINEARTIFACT_LARGE_CHUNK_SIZE) 
+2024-07-27T20:32:54.1968772Z    Knob: ContinueAfterCancelProcessTreeKillAttempt = true Source: $(VSTSAGENT_CONTINUE_AFTER_CANCEL_PROCESSTREEKILL_ATTEMPT) 
+2024-07-27T20:32:54.1970711Z    Knob: ProcessHandlerSecureArguments = false Source: $(AZP_75787_ENABLE_NEW_LOGIC) 
+2024-07-27T20:32:54.1971518Z    Knob: ProcessHandlerSecureArguments = false Source: $(AZP_75787_ENABLE_NEW_LOGIC_LOG) 
+2024-07-27T20:32:54.1972099Z    Knob: ProcessHandlerTelemetry = true Source: $(AZP_75787_ENABLE_COLLECT) 
+2024-07-27T20:32:54.1973325Z    Knob: ProcessHandlerEnableNewLogic = true Source: $(AZP_75787_ENABLE_NEW_PH_LOGIC) 
+2024-07-27T20:32:54.1975610Z    Knob: IgnoreVSTSTaskLib = true Source: $(AZP_AGENT_IGNORE_VSTSTASKLIB) 
+2024-07-27T20:32:54.1976146Z    Knob: FailJobWhenAgentDies = true Source: $(FAIL_JOB_WHEN_AGENT_DIES) 
+2024-07-27T20:32:54.1977273Z    Knob: CheckForTaskDeprecation = true Source: $(AZP_AGENT_CHECK_FOR_TASK_DEPRECATION) 
+2024-07-27T20:32:54.1977951Z    Knob: MountWorkspace = true Source: $(AZP_AGENT_MOUNT_WORKSPACE) 
+2024-07-27T20:32:54.1978741Z    Knob: LogTaskNameInUserAgent = true Source: $(AZP_AGENT_LOG_TASKNAME_IN_USERAGENT) 
+2024-07-27T20:32:54.1979718Z    Knob: UseFetchFilterInCheckoutTask = true Source: $(AGENT_USE_FETCH_FILTER_IN_CHECKOUT_TASK) 
+2024-07-27T20:32:54.1981044Z    Knob: Rosetta2Warning = true Source: $(ROSETTA2_WARNING) 
+2024-07-27T20:32:54.1982702Z Finished checking job knob settings.
+2024-07-27T20:32:54.2922022Z Start tracking orphan processes.
+2024-07-27T20:32:54.3879487Z ##[section]Finishing: Initialize job
+2024-07-27T20:32:54.4151501Z ##[section]Async Command Start: DetectDockerContainer
+2024-07-27T20:32:54.4151876Z ##[section]Async Command End: DetectDockerContainer
+2024-07-27T20:32:54.4152753Z ##[section]Async Command Start: DetectDockerContainer
+2024-07-27T20:32:54.4153070Z ##[section]Async Command End: DetectDockerContainer
+2024-07-27T20:32:54.4429880Z ##[section]Starting: Checkout jorge-trivilin/scaffold-py@main to s
+2024-07-27T20:32:54.4853099Z ==============================================================================
+2024-07-27T20:32:54.4853898Z Task         : Get sources
+2024-07-27T20:32:54.4854190Z Description  : Get sources from a repository. Supports Git, TfsVC, and SVN repositories.
+2024-07-27T20:32:54.4854341Z Version      : 1.0.0
+2024-07-27T20:32:54.4854623Z Author       : Microsoft
+2024-07-27T20:32:54.4855013Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkId=798199)
+2024-07-27T20:32:54.4855145Z ==============================================================================
+2024-07-27T20:32:55.2250692Z Syncing repository: jorge-trivilin/scaffold-py (GitHub)
+2024-07-27T20:32:55.2361606Z ##[command]git version
+2024-07-27T20:32:55.2934887Z git version 2.43.0
+2024-07-27T20:32:55.2997293Z ##[command]git config --get remote.origin.url
+2024-07-27T20:32:55.3066900Z ##[command]git clean -ffdx
+2024-07-27T20:32:55.3147620Z ##[command]git reset --hard HEAD
+2024-07-27T20:32:55.3211066Z HEAD is now at 6bd0a39 Update azure pipelines to use DOcker image
+2024-07-27T20:32:55.3246530Z ##[command]git config gc.auto 0
+2024-07-27T20:32:55.3315011Z ##[command]git config core.longpaths true
+2024-07-27T20:32:55.3368999Z ##[command]git config --get-all http.https://github.com/jorge-trivilin/scaffold-py.extraheader
+2024-07-27T20:32:55.3406424Z ##[command]git config --get-all http.extraheader
+2024-07-27T20:32:55.3439214Z ##[command]git config --get-regexp .*extraheader
+2024-07-27T20:32:55.3473893Z ##[command]git config --get-all http.proxy
+2024-07-27T20:32:55.3508048Z ##[command]git config http.version HTTP/1.1
+2024-07-27T20:32:55.3745730Z ##[command]git --config-env=http.extraheader=env_var_http.extraheader fetch --force --tags --prune --prune-tags --progress --no-recurse-submodules origin --depth=1  +f5555eb84ea5fa7883306503fd9c06d4cd86c002:refs/remotes/origin/f5555eb84ea5fa7883306503fd9c06d4cd86c002
+2024-07-27T20:32:56.2317732Z remote: Enumerating objects: 7, done.        
+2024-07-27T20:32:56.2318261Z remote: Counting objects:  14% (1/7)        
+2024-07-27T20:32:56.2318754Z remote: Counting objects:  28% (2/7)        
+2024-07-27T20:32:56.2319182Z remote: Counting objects:  42% (3/7)        
+2024-07-27T20:32:56.2319551Z remote: Counting objects:  57% (4/7)        
+2024-07-27T20:32:56.2319904Z remote: Counting objects:  71% (5/7)        
+2024-07-27T20:32:56.2320256Z remote: Counting objects:  85% (6/7)        
+2024-07-27T20:32:56.2322608Z remote: Counting objects: 100% (7/7)        
+2024-07-27T20:32:56.2323597Z remote: Counting objects: 100% (7/7), done.        
+2024-07-27T20:32:56.2324140Z remote: Compressing objects: 100% (1/1)        
+2024-07-27T20:32:56.2324596Z remote: Compressing objects: 100% (1/1), done.        
+2024-07-27T20:32:56.2325451Z remote: Total 3 (delta 2), reused 3 (delta 2), pack-reused 0        
+2024-07-27T20:32:56.2375140Z From https://github.com/jorge-trivilin/scaffold-py
+2024-07-27T20:32:56.2375642Z  * [new ref]         f5555eb84ea5fa7883306503fd9c06d4cd86c002 -> origin/f5555eb84ea5fa7883306503fd9c06d4cd86c002
+2024-07-27T20:32:56.2810964Z ##[command]git --config-env=http.extraheader=env_var_http.extraheader fetch --force --tags --prune --prune-tags --progress --no-recurse-submodules origin --depth=1  +f5555eb84ea5fa7883306503fd9c06d4cd86c002
+2024-07-27T20:32:57.0997173Z remote: Total 0 (delta 0), reused 0 (delta 0), pack-reused 0        
+2024-07-27T20:32:57.1044312Z From https://github.com/jorge-trivilin/scaffold-py
+2024-07-27T20:32:57.1044699Z  * branch            f5555eb84ea5fa7883306503fd9c06d4cd86c002 -> FETCH_HEAD
+2024-07-27T20:32:57.1295464Z ##[command]git checkout --progress --force refs/remotes/origin/f5555eb84ea5fa7883306503fd9c06d4cd86c002
+2024-07-27T20:32:57.1299014Z Previous HEAD position was 6bd0a39 Update azure pipelines to use DOcker image
+2024-07-27T20:32:57.1299204Z HEAD is now at f5555eb Update azure pipelines to use DOcker image
+2024-07-27T20:32:57.1350539Z ##[section]Finishing: Checkout jorge-trivilin/scaffold-py@main to s
+2024-07-27T20:32:57.1367175Z ##[section]Starting: Install Docker
+2024-07-27T20:32:57.1371020Z ==============================================================================
+2024-07-27T20:32:57.1371185Z Task         : Docker CLI installer
+2024-07-27T20:32:57.1371245Z Description  : Install Docker CLI on agent machine.
+2024-07-27T20:32:57.1371334Z Version      : 0.238.0
+2024-07-27T20:32:57.1371390Z Author       : Microsoft Corporation
+2024-07-27T20:32:57.1371451Z Help         : https://aka.ms/azpipes-docker-installer-tsg
+2024-07-27T20:32:57.1371536Z ==============================================================================
+2024-07-27T20:32:57.3669658Z Found tool in cache: docker-stable 17.9.0-ce x64
+2024-07-27T20:32:57.3712891Z Prepending PATH environment variable with directory: /home/kz/myagent/_work/_tool/docker-stable/17.9.0-ce/x64
+2024-07-27T20:32:57.3719523Z Verifying docker installation...
+2024-07-27T20:32:57.3727782Z [command]/home/kz/myagent/_work/_tool/docker-stable/17.9.0-ce/x64/docker --version
+2024-07-27T20:32:57.3859419Z Docker version 17.09.0-ce, build afdb6d4
+2024-07-27T20:32:57.3957155Z ##[section]Finishing: Install Docker
+2024-07-27T20:32:57.3977918Z ##[section]Starting: Login to Docker and Pull Docker image
+2024-07-27T20:32:57.3982981Z ==============================================================================
+2024-07-27T20:32:57.3983198Z Task         : Command line
+2024-07-27T20:32:57.3983279Z Description  : Run a command line script using Bash on Linux and macOS and cmd.exe on Windows
+2024-07-27T20:32:57.3983400Z Version      : 2.237.1
+2024-07-27T20:32:57.3983470Z Author       : Microsoft Corporation
+2024-07-27T20:32:57.3983545Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/command-line
+2024-07-27T20:32:57.3983773Z ==============================================================================
+2024-07-27T20:32:57.5345074Z Generating script.
+2024-07-27T20:32:57.5359920Z ========================== Starting Command Output ===========================
+2024-07-27T20:32:57.5377120Z [command]/usr/bin/bash --noprofile --norc /home/kz/myagent/_work/_temp/d26729e8-3501-457f-ad6d-e87cba49d740.sh
+2024-07-27T20:32:57.5456187Z /home/kz/myagent/_work/_temp/d26729e8-3501-457f-ad6d-e87cba49d740.sh: line 1: DOCKER_PASSWORD: command not found
+2024-07-27T20:32:57.5457057Z /home/kz/myagent/_work/_temp/d26729e8-3501-457f-ad6d-e87cba49d740.sh: line 1: DOCKER_USERNAME: command not found
+2024-07-27T20:32:57.5746385Z Error: Cannot perform an interactive login from a non TTY device
+2024-07-27T20:33:00.8459436Z latest: Pulling from jorgetrivilin/scaffold-py
+2024-07-27T20:33:00.8524441Z Digest: sha256:63b0c545cf8fcf6aca02088ac8eb067624b443bbaa6efdea771a6b1865feb5a4
+2024-07-27T20:33:00.8525178Z Status: Image is up to date for jorgetrivilin/scaffold-py:latest
+2024-07-27T20:33:00.8598479Z 
+2024-07-27T20:33:00.8655535Z ##[section]Finishing: Login to Docker and Pull Docker image
+2024-07-27T20:33:00.8668407Z ##[section]Starting: Run lint
+2024-07-27T20:33:00.8671647Z ==============================================================================
+2024-07-27T20:33:00.8671748Z Task         : Command line
+2024-07-27T20:33:00.8671812Z Description  : Run a command line script using Bash on Linux and macOS and cmd.exe on Windows
+2024-07-27T20:33:00.8671914Z Version      : 2.237.1
+2024-07-27T20:33:00.8671964Z Author       : Microsoft Corporation
+2024-07-27T20:33:00.8672026Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/command-line
+2024-07-27T20:33:00.8672124Z ==============================================================================
+2024-07-27T20:33:00.9873245Z Generating script.
+2024-07-27T20:33:00.9881650Z Script contents:
+2024-07-27T20:33:00.9882445Z docker run jorgetrivilin/scaffold-py:latest pylint hello.py
+2024-07-27T20:33:00.9882778Z ========================== Starting Command Output ===========================
+2024-07-27T20:33:00.9897327Z [command]/usr/bin/bash --noprofile --norc /home/kz/myagent/_work/_temp/31d605da-3787-4a48-9b2a-64eec12f8715.sh
+2024-07-27T20:33:01.9945396Z 
+2024-07-27T20:33:01.9946155Z ------------------------------------
+2024-07-27T20:33:01.9946861Z Your code has been rated at 10.00/10
+2024-07-27T20:33:01.9946950Z 
+2024-07-27T20:33:02.3841630Z 
+2024-07-27T20:33:02.3994856Z ##[section]Finishing: Run lint
+2024-07-27T20:33:02.4019449Z ##[section]Starting: Run tests
+2024-07-27T20:33:02.4026429Z ==============================================================================
+2024-07-27T20:33:02.4026649Z Task         : Command line
+2024-07-27T20:33:02.4026779Z Description  : Run a command line script using Bash on Linux and macOS and cmd.exe on Windows
+2024-07-27T20:33:02.4026958Z Version      : 2.237.1
+2024-07-27T20:33:02.4027043Z Author       : Microsoft Corporation
+2024-07-27T20:33:02.4027165Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/command-line
+2024-07-27T20:33:02.4027373Z ==============================================================================
+2024-07-27T20:33:02.6230963Z Generating script.
+2024-07-27T20:33:02.6242377Z Script contents:
+2024-07-27T20:33:02.6243091Z docker run jorgetrivilin/scaffold-py:latest pytest
+2024-07-27T20:33:02.6243304Z ========================== Starting Command Output ===========================
+2024-07-27T20:33:02.6262333Z [command]/usr/bin/bash --noprofile --norc /home/kz/myagent/_work/_temp/0be52758-a8a5-45b9-836c-4a2b51da16a2.sh
+2024-07-27T20:33:03.3857328Z ============================= test session starts ==============================
+2024-07-27T20:33:03.3858495Z platform linux -- Python 3.10.14, pytest-6.2.5, py-1.11.0, pluggy-1.5.0
+2024-07-27T20:33:03.3858805Z rootdir: /app
+2024-07-27T20:33:03.3859099Z collected 1 item
+2024-07-27T20:33:03.3859194Z 
+2024-07-27T20:33:03.3878149Z test_hello.py .                                                          [100%]
+2024-07-27T20:33:03.3878419Z 
+2024-07-27T20:33:03.3878791Z ============================== 1 passed in 0.01s ===============================
+2024-07-27T20:33:03.5310843Z 
+2024-07-27T20:33:03.5369062Z ##[section]Finishing: Run tests
+2024-07-27T20:33:03.5386914Z ##[section]Starting: Checkout jorge-trivilin/scaffold-py@main to s
+2024-07-27T20:33:03.5390763Z ==============================================================================
+2024-07-27T20:33:03.5391069Z Task         : Get sources
+2024-07-27T20:33:03.5391193Z Description  : Get sources from a repository. Supports Git, TfsVC, and SVN repositories.
+2024-07-27T20:33:03.5391404Z Version      : 1.0.0
+2024-07-27T20:33:03.5391507Z Author       : Microsoft
+2024-07-27T20:33:03.5391620Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkId=798199)
+2024-07-27T20:33:03.5391820Z ==============================================================================
+2024-07-27T20:33:03.9408685Z Cleaning any cached credential from repository: jorge-trivilin/scaffold-py (GitHub)
+2024-07-27T20:33:03.9569919Z ##[section]Finishing: Checkout jorge-trivilin/scaffold-py@main to s
+2024-07-27T20:33:03.9760360Z ##[section]Starting: Finalize Job
+2024-07-27T20:33:03.9823306Z Cleaning up task key
+2024-07-27T20:33:03.9824953Z Start cleaning up orphan processes.
+2024-07-27T20:33:04.0966818Z ##[section]Finishing: Finalize Job
+2024-07-27T20:33:04.1048220Z ##[section]Finishing: Job
