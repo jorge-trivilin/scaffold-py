@@ -1,13 +1,31 @@
 steps:
   - name: 'python:3.8'
+    id: 'Install dependencies'
     entrypoint: 'bash'
     args:
       - '-c'
       - |
         pip install --upgrade pip
-        pip install -r requirements.txt
-        pip install pylint
-        make lint
-        make test
+        pip install -r requirements.txt -t /workspace/pip
 
-logsBucket: 'gs://scaffold-py'
+  - name: 'python:3.8'
+    id: 'Lint'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        export PYTHONPATH=$PYTHONPATH:/workspace/pip
+        pylint hello.py
+    waitFor:
+      - 'Install dependencies'
+
+  - name: 'python:3.8'
+    id: 'Test'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        export PYTHONPATH=$PYTHONPATH:/workspace/pip
+        pytest
+    waitFor:
+      - 'Install dependencies'
