@@ -1,5 +1,5 @@
-# Use uma imagem base do Python que não seja a versão 3.12
-FROM python:3.11
+# Use uma imagem base do Python 3.10
+FROM python:3.10
 
 # Configurar o diretório de trabalho
 WORKDIR /app
