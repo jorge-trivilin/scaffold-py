@@ -8,23 +8,20 @@ resources:
   containers:
   - container: python
     image: jorgetrivilin/scaffold-py:latest
-    endpoint: dockerhub
-
-variables:
-  dockerRegistry: 'jorgetrivilin'
+    endpoint: DockerHubConnection
 
 steps:
 - task: DockerInstaller@0
   displayName: 'Install Docker'
 
 - script: |
-    docker pull $(dockerRegistry)/scaffold-py:latest
+    docker pull $(containerRegistry)/scaffold-py:latest
   displayName: 'Pull Docker image'
 
 - script: |
-    docker run $(dockerRegistry)/scaffold-py:latest pylint hello.py
+    docker run $(containerRegistry)/scaffold-py:latest pylint hello.py
   displayName: 'Run lint'
 
 - script: |
-    docker run $(dockerRegistry)/scaffold-py:latest pytest
+    docker run $(containerRegistry)/scaffold-py:latest pytest
   displayName: 'Run tests'
