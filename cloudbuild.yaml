@@ -35,6 +35,7 @@ artifacts:
     location: gs://scaffold-py/artifacts/
     paths:
       - 'workspace/pip/**/*'
+
 options:
   logging: CLOUD_LOGGING_ONLY
   machineType: 'E2_HIGHCPU_8'
@@ -45,6 +46,3 @@ options:
 timeout: '900s'
 
 logsBucket: gs://scaffold-py/logs
-cache:
-  paths:
-    - '/workspace/pip'
