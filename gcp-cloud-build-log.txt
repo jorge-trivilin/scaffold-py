@@ -1,0 +1,70 @@
+starting build "caa4f685-cb20-4054-a0b4-b2cd10a9d0d2"
+
+FETCHSOURCE
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+Initialized empty Git repository in /workspace/.git/
+From https://github.com/jorge-trivilin/scaffold-py
+ * branch            e73b38da6afdd4183b9edabd08f9171f5e989a7b -> FETCH_HEAD
+HEAD is now at e73b38d Uploading the azure pipeline log
+BUILD
+Starting Step #0
+Step #0: Pulling image: gcr.io/turnkey-mender-430717-t7/my-custom-container
+Step #0: Using default tag: latest
+Step #0: latest: Pulling from turnkey-mender-430717-t7/my-custom-container
+Step #0: efc2b5ad9eec: Pulling fs layer
+Step #0: 0d935f02ede5: Pulling fs layer
+Step #0: fea4f2170757: Pulling fs layer
+Step #0: e5635d0cdd4c: Pulling fs layer
+Step #0: ebe530eb534f: Pulling fs layer
+Step #0: c8baa16035e1: Pulling fs layer
+Step #0: e5635d0cdd4c: Waiting
+Step #0: ebe530eb534f: Waiting
+Step #0: c8baa16035e1: Waiting
+Step #0: 0d935f02ede5: Verifying Checksum
+Step #0: 0d935f02ede5: Download complete
+Step #0: fea4f2170757: Verifying Checksum
+Step #0: fea4f2170757: Download complete
+Step #0: efc2b5ad9eec: Verifying Checksum
+Step #0: efc2b5ad9eec: Download complete
+Step #0: e5635d0cdd4c: Verifying Checksum
+Step #0: e5635d0cdd4c: Download complete
+Step #0: ebe530eb534f: Verifying Checksum
+Step #0: ebe530eb534f: Download complete
+Step #0: c8baa16035e1: Verifying Checksum
+Step #0: c8baa16035e1: Download complete
+Step #0: efc2b5ad9eec: Pull complete
+Step #0: 0d935f02ede5: Pull complete
+Step #0: fea4f2170757: Pull complete
+Step #0: e5635d0cdd4c: Pull complete
+Step #0: ebe530eb534f: Pull complete
+Step #0: c8baa16035e1: Pull complete
+Step #0: Digest: sha256:7ed3a767afc629216702e4a55611ed074b45ad2a34c714c4f406c03bdd1929a6
+Step #0: Status: Downloaded newer image for gcr.io/turnkey-mender-430717-t7/my-custom-container:latest
+Step #0: gcr.io/turnkey-mender-430717-t7/my-custom-container:latest
+Step #0: 
+Step #0: ------------------------------------
+Step #0: Your code has been rated at 10.00/10
+Step #0: 
+Finished Step #0
+Starting Step #1
+Step #1: Already have image (with digest): gcr.io/turnkey-mender-430717-t7/my-custom-container
+Step #1: ============================= test session starts ==============================
+Step #1: platform linux -- Python 3.8.19, pytest-8.3.2, pluggy-1.5.0
+Step #1: rootdir: /workspace
+Step #1: collected 1 item
+Step #1: 
+Step #1: test_hello.py .                                                          [100%]
+Step #1: 
+Step #1: ============================== 1 passed in 0.01s ===============================
+Finished Step #1
+PUSH
+DONE
