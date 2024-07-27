@@ -2,7 +2,7 @@ trigger:
 - main
 
 pool:
-  vmImage: 'ubuntu-latest'
+  name: 'scaffold-py'
 
 steps:
 - task: UsePythonVersion@0
