@@ -9,4 +9,4 @@ test:
 	pytest
 
 format:
-	autopep8 --in-place --agressive --agressive hello.py
+	autopep8 --in-place --aggressive --aggressive hello.py
