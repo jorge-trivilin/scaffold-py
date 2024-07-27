@@ -5,13 +5,8 @@ pool:
   name: 'scaffold-py'  # Nome do agent pool
 
 steps:
-- task: UsePythonVersion@0
-  inputs:
-    versionSpec: '3.11'
-    addToPath: true
-
 - script: |
-    python -m venv myenv
+    python3 -m venv myenv
     source myenv/bin/activate
     pip install --upgrade pip
     pip install -r requirements.txt
