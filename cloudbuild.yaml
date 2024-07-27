@@ -4,22 +4,10 @@ steps:
     args:
       - '-c'
       - |
-        pip install --upgrade pip &&
+        pip install --upgrade pip
         pip install -r requirements.txt
         pip install pylint
-
-  - name: 'python:3.8'
-    entrypoint: 'bash'
-    args:
-      - '-c'
-      - |
         make lint
-
-  - name: 'python:3.8'
-    entrypoint: 'bash'
-    args:
-      - '-c'
-      - |
         make test
 
 logsBucket: 'gs://scaffold-py'
