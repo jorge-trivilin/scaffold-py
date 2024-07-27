@@ -14,7 +14,7 @@ This repository provides a scaffold for Python projects with a focus on continuo
 
 ## Project Structure
 
-
+```
 scaffold-py/
 ├── .github/
 │   └── workflows/
@@ -23,6 +23,7 @@ scaffold-py/
 ├── Makefile
 ├── requirements.txt
 └── test_hello.py
+```
 
 - **`.github/workflows/python-app.yml`**: Configuration for GitHub Actions to automate testing, linting, and formatting.
 - **`hello.py`**: Example Python script.
