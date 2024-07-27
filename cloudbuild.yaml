@@ -1,33 +1,11 @@
 steps:
-  - name: 'python:3.8'
-    id: 'Install dependencies'
+  - name: 'gcr.io/turnkey-mender-430717-t7/my-custom-container'
     entrypoint: 'bash'
-    args:
-      - '-c'
-      - |
-        pip install --upgrade pip
-        pip install -r requirements.txt
-        pip install pylint
+    args: ['-c', 'pylint hello.py']
 
-  - name: 'python:3.8'
-    id: 'Lint'
+  - name: 'gcr.io/turnkey-mender-430717-t7/my-custom-container'
     entrypoint: 'bash'
-    args:
-      - '-c'
-      - |
-        pylint hello.py
-    waitFor:
-      - 'Install dependencies'
-
-  - name: 'python:3.8'
-    id: 'Test'
-    entrypoint: 'bash'
-    args:
-      - '-c'
-      - |
-        pytest
-    waitFor:
-      - 'Install dependencies'
+    args: ['-c', 'pytest']
 
 artifacts:
   objects:
