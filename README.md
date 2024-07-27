@@ -121,10 +121,6 @@ def test_add():
     assert add(1, 1) == 2
 ```
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-```
-
 This README file provides an overview of the project, instructions for setting up the environment, and details on how to run various tasks. It also includes information on the project's structure and continuous integration setup. Feel free to modify it to better suit your project's needs.
+
+
