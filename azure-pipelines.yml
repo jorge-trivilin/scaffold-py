@@ -6,7 +6,7 @@ pool:
 
 steps:
 - script: |
-    python3.12 -m venv scaffold
+    python3.12 -m venv myenv
     source myenv/bin/activate
     pip install --upgrade pip
     pip install -r requirements.txt
