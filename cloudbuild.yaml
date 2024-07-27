@@ -21,6 +21,4 @@ steps:
       - |
         make test
 
-options:
-  logging: CLOUD_LOGGING_ONLY
-  logsBucket: 'gs://scaffold-py'
+logsBucket: 'gs://scaffold-py'
