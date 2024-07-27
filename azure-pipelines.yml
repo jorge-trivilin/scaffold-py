@@ -2,25 +2,22 @@ trigger:
 - main
 
 pool:
-  name: 'scaffold-py'
+  name: 'scaffold-py'  # Nome do agent pool
 
 steps:
-- task: UsePythonVersion@0
-  inputs:
-    versionSpec: '3.x'
-    addToPath: true
-
 - script: |
+    python3.12 -m venv scaffold
+    source scaffold/bin/activate
     pip install --upgrade pip
     pip install -r requirements.txt
-  displayName: 'Install dependencies'
+  displayName: 'Setup Python environment and install dependencies'
 
 - script: |
+    source myenv/bin/activate
     pylint hello.py
   displayName: 'Run lint'
 
 - script: |
+    source myenv/bin/activate
     pytest
   displayName: 'Run tests'
-
-# test
