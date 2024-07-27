@@ -120,6 +120,12 @@ from hello import add
 def test_add():
     assert add(1, 1) == 2
 ```
+## Demo
+
+Video 01:
+[https://youtu.be/AIJ2z2FWF0A](https://youtu.be/HIB8HM3gj68)
+Video 02:
+[https://youtu.be/HIB8HM3gj68](https://youtu.be/AIJ2z2FWF0A)
 
 This README file provides an overview of the project, instructions for setting up the environment, and details on how to run various tasks. It also includes information on the project's structure and continuous integration setup. Feel free to modify it to better suit your project's needs.
 
