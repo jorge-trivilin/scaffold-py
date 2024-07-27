@@ -2,22 +2,29 @@ trigger:
 - main
 
 pool:
-  name: 'scaffold-py'  # Nome do agent pool
+  vmImage: 'ubuntu-latest'
+
+resources:
+  containers:
+  - container: python
+    image: jorgetrivilin/scaffold-py:latest
+    endpoint: dockerhub
+
+variables:
+  dockerRegistry: 'jorgetrivilin'
 
 steps:
-- script: |
-    python3 -m venv myenv
-    source myenv/bin/activate
-    pip install --upgrade pip
-    pip install -r requirements.txt
-  displayName: 'Setup Python environment and install dependencies'
+- task: DockerInstaller@0
+  displayName: 'Install Docker'
 
 - script: |
-    source myenv/bin/activate
-    pylint hello.py
+    docker pull $(dockerRegistry)/scaffold-py:latest
+  displayName: 'Pull Docker image'
+
+- script: |
+    docker run $(dockerRegistry)/scaffold-py:latest pylint hello.py
   displayName: 'Run lint'
 
 - script: |
-    source myenv/bin/activate
-    pytest
+    docker run $(dockerRegistry)/scaffold-py:latest pytest
   displayName: 'Run tests'
