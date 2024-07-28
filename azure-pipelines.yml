@@ -13,13 +13,13 @@ steps:
 
 - script: |
     echo $(DOCKER_PASSWORD) | docker login -u $(DOCKER_USERNAME) --password-stdin
-    docker pull $(containerRegistry)/scaffold-py:latest
+    docker pull $(CONTAINER_REGISTRY)/scaffold-py:latest
   displayName: 'Login to Docker and Pull Docker image'
 
 - script: |
-    docker run $(containerRegistry)/scaffold-py:latest pylint hello.py
+    docker run $(CONTAINER_REGISTRY)/scaffold-py:latest pylint hello.py
   displayName: 'Run lint'
 
 - script: |
-    docker run $(containerRegistry)/scaffold-py:latest pytest
+    docker run $(CONTAINER_REGISTRY)/scaffold-py:latest pytest
   displayName: 'Run tests'
