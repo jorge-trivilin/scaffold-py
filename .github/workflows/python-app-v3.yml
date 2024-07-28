@@ -36,7 +36,7 @@ jobs:
     env:
       REGISTRY: ghcr.io
       IMAGE_NAME: ${{ github.repository }}/scaffold-py
-      DOCKER_TAG: main
+      DOCKER_TAG: v1.1 # Mudança para a nova tag
     permissions:
       contents: read
       packages: write
