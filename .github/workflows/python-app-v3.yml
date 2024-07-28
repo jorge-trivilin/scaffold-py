@@ -56,14 +56,16 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
         env:
-          GITHUB_OUTPUT: metadata.json  ## using environment files
+          GITHUB_OUTPUT: metadata.json # Define o arquivo de saída para os metadados
+      - name: Set Docker tag
+        run: echo "DOCKER_TAG=main" >> $GITHUB_OUTPUT
       - name: Build and push Docker image
         id: push
         uses: docker/build-push-action@v2
         with:
           context: .
           push: true
-          tags: ${{ env.tags }}
+          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.DOCKER_TAG }} # Usa a variável de ambiente
           labels: ${{ env.labels }}
       - name: Generate artifact attestation
         uses: actions/attest-build-provenance@v1
