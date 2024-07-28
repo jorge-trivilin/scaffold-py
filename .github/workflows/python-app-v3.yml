@@ -56,7 +56,7 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
         env:
-          GITHUB_OUTPUT: metadata.json
+          GITHUB_OUTPUT: metadata.json  ## using environment files
       - name: Build and push Docker image
         id: push
         uses: docker/build-push-action@v2
