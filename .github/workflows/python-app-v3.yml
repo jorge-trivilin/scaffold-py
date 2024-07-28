@@ -36,6 +36,7 @@ jobs:
     env:
       REGISTRY: ghcr.io
       IMAGE_NAME: ${{ github.repository }}/scaffold-py
+      DOCKER_TAG: main
     permissions:
       contents: read
       packages: write
@@ -57,8 +58,6 @@ jobs:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
         env:
           GITHUB_OUTPUT: metadata.json # Define o arquivo de saída para os metadados
-      - name: Set Docker tag
-        run: echo "DOCKER_TAG=main" >> $GITHUB_OUTPUT
       - name: Build and push Docker image
         id: push
         uses: docker/build-push-action@v2
