@@ -44,7 +44,7 @@ jobs:
       run: docker build -t ghcr.io/jorgetrivilin/scaffold-py:${{ github.sha }} .
 
     - name: Log in to GitHub Container Registry
-      run: run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+      run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
 
     - name: Push Docker Image to Github Container Registry
       run: docker push ghcr.io/jorgetrivilin/scaffold-py:${{ github.sha }}
