@@ -40,7 +40,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       REGISTRY: ghcr.io
-      IMAGE_NAME: scaffold-py/scaffold-py
+      IMAGE_NAME: jorgetrivilin/scaffold-py
     permissions:
       contents: read
       packages: write
