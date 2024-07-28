@@ -19,7 +19,7 @@ steps:
 
 - script: |
     echo "Logging into Docker..."
-    echo $(DOCKER_PASSWORD) | docker login -u $(DOCKER_USERNAME) --password-stdin --config ~/.docker
+    echo $(DOCKER_PASSWORD) | docker login -u $(DOCKER_USERNAME) --password-stdin
     docker pull $(CONTAINER_REGISTRY)/scaffold-py:latest
   displayName: 'Login to Docker and Pull Docker image'
 
