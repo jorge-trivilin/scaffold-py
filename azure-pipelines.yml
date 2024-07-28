@@ -11,7 +11,6 @@ steps:
 - task: DockerInstaller@0
   displayName: 'Install Docker'
 
-steps:
 - script: |
     echo "Disabling Docker credentials store..."
     mkdir -p ~/.docker
