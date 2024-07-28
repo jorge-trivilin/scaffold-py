@@ -11,8 +11,16 @@ steps:
 - task: DockerInstaller@0
   displayName: 'Install Docker'
 
+steps:
 - script: |
-    echo $(DOCKER_PASSWORD) | docker login -u $(DOCKER_USERNAME) --password-stdin
+    echo "Disabling Docker credentials store..."
+    mkdir -p ~/.docker
+    echo '{"credsStore":""}' > ~/.docker/config.json
+  displayName: 'Disable Docker Credentials Store'
+
+- script: |
+    echo "Logging into Docker..."
+    echo $(DOCKER_PASSWORD) | docker login -u $(DOCKER_USERNAME) --password-stdin --config ~/.docker
     docker pull $(CONTAINER_REGISTRY)/scaffold-py:latest
   displayName: 'Login to Docker and Pull Docker image'
 
